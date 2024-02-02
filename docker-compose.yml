@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  anaconda:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./notebooks:/opt/notebooks
+    ports:
+      - '8888:8888'
+
+# volumes:
+#   notebooks:
